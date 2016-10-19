@@ -12,13 +12,19 @@ As for receiving the data the tool should work with three kinds of inputs:
 
 ## Example
 Given the string
-``` THEQUICKBROWNFOXJUMPS**OVERT**HELAZYDOG ```
+
+``` THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG ```
+
 and the search characters
+
 ``` E O T ```
+
 The length of the shortest substring containing all search characters is
+
 ```5```
 The match would be here
-```THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG```
+
+```THEQUICKBROWNFOXJUMPS**OVERT**HELAZYDOG```
 
 ## Installation & Usage
 
