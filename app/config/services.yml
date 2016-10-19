@@ -1,0 +1,21 @@
+parameters:
+  http-generator-url: "https://www.random.org/strings/"
+services:
+  shortest-sub-string:
+    class: "Services\ShortestSubString"
+
+  random-string-generator:
+    class: "Services\RandomStringGenerator"
+
+  http-client:
+    class: "GuzzleHttp\Client"
+
+  http-string-generator:
+    class: "Services\HttpStringGenerator"
+    arguments: ["@http-client", "%http-generator-url%"]
+    calls:
+      - setParameters: {num: 10, len: 20, digits: 'on', upperalpha: 'on', loweralpha: 'on', unique: 'on', format: 'plain', rnd: 'new'}
+
+  shortest-sub-string-command:
+    class: "Command\ShortestSubStringCommand"
+    arguments: ["@shortest-sub-string"]

@@ -1,0 +1,9 @@
+random_generator:
+    path:      /random-generator/{length}/{chars}
+    defaults:  { Controller\IndexController:random }
+    method: GET
+
+http_generator:
+    path:      /http-generator/{chars}
+    defaults:  { Controller\IndexController:http }
+    method: GET
