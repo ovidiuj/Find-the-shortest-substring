@@ -28,6 +28,7 @@ The match would be here
 ## Installation & Usage
 
 * run ``` composer update ```
+* run ``` vendor/bin/phpunit ```
 * run ``` cat input.txt | php get-shortest-sub-string.php EOT ``` or ``` php get-shortest-sub-string.php EOT THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG ```
 * go to: ``` /http-generator/EOT/ ```
 * go to: ``` /random-generator/300/EOT ``` where **300** is the length of generated string and **EOT** is the set of search characters
