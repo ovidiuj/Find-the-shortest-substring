@@ -23,10 +23,7 @@ The length of the shortest substring containing all search characters is **5**
 
 The match would be here
 
-``` 
-THEQUICKBROWNFOXJUMPS__OVERT__HELAZYDOG 
-
-```
+THEQUICKBROWNFOXJUMPS**OVERT**HELAZYDOG 
 
 ## Installation & Usage
 
