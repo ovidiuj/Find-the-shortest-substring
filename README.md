@@ -19,9 +19,8 @@ and the search characters
 
 ``` E O T ```
 
-The length of the shortest substring containing all search characters is
+The length of the shortest substring containing all search characters is **5**
 
-```5```
 The match would be here
 
 ```THEQUICKBROWNFOXJUMPS**OVERT**HELAZYDOG```
