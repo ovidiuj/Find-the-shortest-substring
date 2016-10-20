@@ -15,7 +15,6 @@ $application->register(new YamlConfigServiceProvider(__DIR__ . '/config/services
 $application->register(new YamlRoutingServiceProvider(__DIR__ . '/config/routing.yml'));
 
 $application->register(new ConsoleServiceProvider($application->get('shortest-sub-string-command')));
-//echo '<pre>';print_r($application->container);echo '</pre>';exit;
 $application->register(new TwigServiceProvider(array(
     'path' => __DIR__.'/../views',
 )));
